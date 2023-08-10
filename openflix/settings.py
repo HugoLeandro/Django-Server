@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TOKEN_CSRF = os.getenv('TOKEN_CSRF')
 if TOKEN_CSRF:
     SECRET_KEY = TOKEN_CSRF
-    CSRF_TRUSTED_ORIGINS = ['https://django-openflix-production.up.railway.app']
+    CSRF_TRUSTED_ORIGINS = ['https://django-server-production-34d6.up.railway.app']
 else:
     SECRET_KEY = 'django-insecure-rc^*w^w&6g9_(uvx#6s*bnt!w)l0rdi%!asdgv#y%uc&x%wo5pk'
 #SECURITY WARNING: keep the secret key used in production secret!
